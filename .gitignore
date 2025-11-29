@@ -1,0 +1,4 @@
+__pycache__/
+lib/
+moviesenv-py311/
+wiki_movie_plots_deduped
