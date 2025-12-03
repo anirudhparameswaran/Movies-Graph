@@ -51,8 +51,9 @@ MANIFEST
 .streamlit/secrets.toml
 .streamlit/config.toml
 
-# Data files (optional; keep if you want to track CSV)
-# wiki_movie_plots_deduped.csv
+# Data files (too large for GitHub; download separately)
+wiki_movie_plots_deduped.csv
+*.csv
 
 # Generated outputs
 *.html
