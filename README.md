@@ -1,31 +1,10 @@
 # Movies Graph Explorer
 
-A Streamlit web app that visualizes movie similarity as an interactive graph. Movies are connected based on semantic similarity of their plots using sentence transformers embeddings.
-
-## Project Overview
-
-This project takes a CSV of movie data (`wiki_movie_plots_deduped.csv`) and builds an interactive network graph where:
-- Each **node** is a movie (title).
-- Each **edge** connects similar movies based on plot embeddings.
-- Edge weights reflect cosine similarity between plot vectors.
-
-The graph is rendered using **PyVis** inside a Streamlit UI, allowing you to:
-- Filter movies by origin/ethnicity and release year.
-- Adjust similarity threshold and top-K neighbors per node.
-- Optionally use spaCy NER to mask person names before embedding.
-- Explore the graph interactively (drag nodes, zoom, hover for details).
+A concise Streamlit app that visualizes movie similarities as an interactive graph using Sentence Transformers, PyVis, and optional BERTopic/spaCy preprocessing.
 
 ## Quick Start
 
-### Prerequisites
-
-- **Python 3.10–3.13** (Python 3.14 is not yet supported by all required packages like `numba`).
-- **macOS** (or Linux; tested on macOS with zsh).
-- Git (optional, for cloning the repo).
-
-### 1. Set Up a Python Virtual Environment
-
-Use Python 3.11 or 3.12 (recommended):
+1. Create and activate a Python 3.11 virtual environment:
 
 ```bash
 python3.11 -m venv .venv-streamlit
@@ -33,21 +12,33 @@ source .venv-streamlit/bin/activate
 python -m pip install --upgrade pip setuptools wheel
 ```
 
-### 2. Install Dependencies
+2. Install dependencies:
 
 ```bash
 pip install -r requirements-streamlit.txt
 ```
 
-The requirements include:
-- `streamlit` — web framework
-- `sentence-transformers` — embeddings
-- `scikit-learn`, `networkx` — graph/ML utilities
-- `pyvis` — interactive network visualization
-- `pandas`, `numpy` — data handling
-- `torch`, `transformers` — deep learning backends
-- `umap-learn`, `hdbscan`, `bertopic` — optional advanced clustering
+3. Ensure the dataset `wiki_movie_plots_deduped.csv` is in the project root (download from Kaggle if needed), then run:
 
+```bash
+python -m streamlit run streamlit_app.py
+```
+
+## Screenshots
+
+Interactive graph view:
+
+![Graph view](images/Screenshot 2025-12-03 at 10.48.41 AM.png)
+
+Filter and build controls:
+
+![Controls view](images/Screenshot 2025-12-03 at 10.49.09 AM.png)
+
+## Notes
+- The app computes embeddings live; reduce `Sample size` in the sidebar for faster runs.
+- If you want topic modeling, run `bertopic_analysis.ipynb` to generate topics and save outputs for the app to consume.
+
+For full setup and troubleshooting, see `requirements-streamlit.txt` and the notebooks.
 ### 3. Download the Dataset
 
 The project uses `wiki_movie_plots_deduped.csv`. You can either:

@@ -38,6 +38,7 @@ MANIFEST
 *.iws
 *.ipr
 
+images/
 # VS Code
 .vscode/
 *.code-workspace
