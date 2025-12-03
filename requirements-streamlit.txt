@@ -1,0 +1,13 @@
+streamlit>=1.22
+sentence-transformers
+scikit-learn
+pyvis
+networkx
+pandas
+numpy
+torch
+transformers
+umap-learn
+hdbscan
+bertopic
+spacy

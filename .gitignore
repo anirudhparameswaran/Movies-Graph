@@ -1,4 +1,99 @@
-__pycache__/
-lib/
+# Virtual environments
+.venv-streamlit/
+moviesenv/
 moviesenv-py311/
-wiki_movie_plots_deduped
+venv/
+env/
+.env
+*.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Data files (optional; keep if you want to track CSV)
+# wiki_movie_plots_deduped.csv
+
+# Generated outputs
+*.html
+movie_graph.html
+plot_embeddings.csv
+*.pkl
+*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Environment
+.env.local
+.env.*.local
+
+# IDE temp files
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# pytest, coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Logs
+*.log
+logs/
+
+# Misc
+*.tmp
+*.bak
+.DS_Store
