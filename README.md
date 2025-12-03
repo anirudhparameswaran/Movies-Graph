@@ -28,11 +28,11 @@ python -m streamlit run streamlit_app.py
 
 Interactive graph view:
 
-![Graph view]([images/Screenshot 2025-12-03 at 10.48.41 AM.png](https://github.com/anirudhparameswaran/Movies-Graph/blob/main/images/Graph.png?raw=True)
+![Graph view](https://github.com/anirudhparameswaran/Movies-Graph/blob/main/images/Graph.png?raw=True)
 
 Filter and build controls:
 
-![Graph view]([images/Screenshot 2025-12-03 at 10.48.41 AM.png](https://github.com/anirudhparameswaran/Movies-Graph/blob/main/images/Interface.png?raw=True)
+![Graph view](https://github.com/anirudhparameswaran/Movies-Graph/blob/main/images/Interface.png?raw=True)
 
 ## Notes
 - The app computes embeddings live; reduce `Sample size` in the sidebar for faster runs.
